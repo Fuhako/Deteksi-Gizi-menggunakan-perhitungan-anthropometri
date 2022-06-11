@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/signupColor"
+    android:gravity="center_horizontal"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:hint="Masukan username"
+        android:layout_marginTop="100pt"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="40dp"
+        android:hint="Masukan Password" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/login"
+        android:text="L O G I N"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="35dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Belum Terdaftar?"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/register"
+            android:text="D A F T A R"
+            android:layout_marginTop="3dp"/>
+
+    </LinearLayout>
+</LinearLayout>

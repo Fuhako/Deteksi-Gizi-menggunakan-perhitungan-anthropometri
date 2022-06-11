@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/signupColor"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="#7DBFDF"
+        android:backgroundTint="#F63F3A"
+        android:text=" Perhitungan Status Gizi"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="12pt" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Nama : "
+            android:textSize="10pt"/>
+        <EditText
+            android:id="@+id/edNama"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Nama"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Umur : "
+            android:textColor="@color/white"
+            android:textSize="10pt"/>
+        <EditText
+            android:id="@+id/edUmur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Umur"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berat Badan : "
+            android:textColor="@color/white"
+            android:textSize="10pt"/>
+        <EditText
+            android:id="@+id/edBb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Bb"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panjang/Tinggi Badan : "
+            android:textColor="@color/white"
+            android:textSize="10pt"/>
+        <EditText
+            android:id="@+id/edPb"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Pb"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin : "
+            android:textColor="@color/white"
+            android:textSize="10pt"/>
+        <Spinner
+            android:id="@+id/spinnerJK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posisi Ukur : "
+            android:textColor="@color/white"
+            android:textSize="10pt"/>
+        <Spinner
+            android:id="@+id/spinnerPU"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+
+        <Button
+            android:id="@+id/btnHitung"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login"
+            android:hint="H I T U N G"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login"
+            android:hint="C L E A R"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="8pt"
+            android:layout_marginLeft="10pt" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil : "
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textAlignment="center"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status BB/U : "
+            android:textColor="@color/white"
+            android:textSize="10pt"/>
+        <TextView
+            android:id="@+id/statusBb"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status PB/TB/U  : "
+            android:textColor="@color/white"
+            android:textSize="10pt"/>
+        <TextView
+            android:id="@+id/statusPb"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Status BB/PB : "
+            android:textSize="10pt"/>
+        <TextView
+            android:id="@+id/statusBbTb"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status IMT/U : "
+            android:textColor="@color/white"
+            android:textSize="10pt"/>
+        <TextView
+            android:id="@+id/statusImt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textColor="@color/white"
+            android:textSize="10pt"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/login"
+        android:text="S I M P A N" />
+
+    <Button
+        android:id="@+id/tampildata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login"
+        android:text="Tampilkan Data"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="0dp" />
+
+</LinearLayout>

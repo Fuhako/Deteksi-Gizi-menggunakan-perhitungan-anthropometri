@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Perhitungan_Gizi</string>
+    <string-array name="jeniskelamin">
+        <item>Laki laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="posisiukur">
+        <item>Terlentang</item>
+        <item>Berdiri</item>
+    </string-array>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+</resources>
